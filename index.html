@@ -1,34 +1,74 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>unclebao.party</title>
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<title>/qa/ - unclebao</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
 </head>
-<body>
+
+<body data-board="qa">
+
+<div class="topbar">
+
+<a href="../">home</a>
+
+<a href="../qa/">/qa/</a>
+<a href="../bao/">/bao/</a>
+<a href="../mei/">/mei/</a>
+<a href="../tech/">/tech/</a>
+
+</div>
 
 <div class="header">
+<h1>/qa/</h1>
+</div>
 
-    <div class="boardnav">
-        [
-        <script src="../board.js"></script>
-        ]
-    </div>
+<div class="postform">
 
-    <h1>unclebao.party</h1>
-    <p>uncle bao o algo</p>
+<div class="formrow">
+<div class="label">Subject</div>
+<div class="input">
+<input type="text" id="subject">
+</div>
+</div>
+
+<div class="formrow">
+<div class="label">Comment</div>
+<div class="input">
+<textarea id="content"></textarea>
+</div>
+</div>
+
+<div class="formrow">
+<div class="label">File</div>
+<div class="input">
+<input type="file" id="file">
+</div>
+</div>
+
+<div class="formrow">
+<div class="label">Post</div>
+<div class="input">
+<button id="postButton">
+Post
+</button>
+</div>
+</div>
 
 </div>
 
-<div class="box">
-    <h2>Welcome</h2>
-    <p>Welcome to unclebao.party.</p>
-    <p>Choose a board above.</p>
+<div
+id="posts"
+class="posts">
 </div>
 
-<div class="footer">
-    unclebao.party © 2025
-</div>
+<script src="../board.js"></script>
 
 </body>
 </html>
