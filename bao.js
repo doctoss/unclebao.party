@@ -53,7 +53,7 @@ document.getElementById("postButton").onclick = async function () {
     const content = document.getElementById("content").value;
     const image = document.getElementById("image").value;
 
-    const { error } = await supabase
+    const { error } = await db
         .from("posts")
         .insert([
             {
