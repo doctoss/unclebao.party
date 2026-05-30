@@ -11,7 +11,7 @@ async function loadPosts() {
     const { data, error } = await supabase
         .from("posts")
         .select("*")
-        .eq("board", "bao")
+        .eq("board", "tech")
         .order("created_at", { ascending: false });
 
     const postsDiv = document.getElementById("posts");
