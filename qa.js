@@ -8,7 +8,7 @@ const db = window.supabase.createClient(
 
 async function loadPosts() {
 
-    const { data, error } = await supabase
+    const { data, error } = await db
         .from("posts")
         .select("*")
         .eq("board", "qa")
