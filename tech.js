@@ -57,7 +57,7 @@ document.getElementById("postButton").onclick = async function () {
         .from("posts")
         .insert([
             {
-                board: "qa",
+                board: "tech",
                 title: title,
                 content: content,
                 image_url: image
