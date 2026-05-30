@@ -1,49 +1,134 @@
 body {
-    background: #1f1f1f;
-    color: #d8d8d8;
-    font-family: Georgia, serif;
+    background: #ffffff;
+    color: #000;
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
+}
+
+.topbar {
+    background: #d8c8ff;
+    border-bottom: 1px solid #aaa;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.topbar a {
+    color: #4a2b88;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+.topbar a:hover {
+    text-decoration: underline;
 }
 
 .header {
     text-align: center;
-    background: #2a2a2a;
-    border-bottom: 1px solid #555;
-    padding: 10px;
-}
-
-.boardnav {
-    background: #303030;
-    border: 1px solid #555;
-    padding: 6px;
-    margin: 10px auto;
-    width: fit-content;
-    font-size: 15px;
-}
-
-.boardnav a {
-    color: #b9c8ff;
-    text-decoration: none;
-}
-
-.boardnav a:hover {
-    text-decoration: underline;
-}
-
-h1 {
-    margin: 10px 0 0 0;
-}
-
-.box {
-    width: 80%;
-    margin: 20px auto;
-    background: #2a2a2a;
-    border: 1px solid #555;
     padding: 15px;
 }
 
-.footer {
-    text-align: center;
-    color: #888;
-    padding: 20px;
+.header h1 {
+    color: #6c3bcf;
+    margin: 0;
+    font-size: 28px;
+}
+
+.postform {
+    width: 700px;
+    margin: auto;
+    border: 1px solid #aaa;
+    background: #f7f4ff;
+    margin-bottom: 20px;
+}
+
+.formrow {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.label {
+    width: 120px;
+    background: #d8c8ff;
+    padding: 10px;
+    font-weight: bold;
+    color: #4a2b88;
+    border-right: 1px solid #bbb;
+}
+
+.input {
+    flex: 1;
+    padding: 8px;
+}
+
+input[type=text],
+textarea {
+    width: 98%;
+    border: 1px solid #999;
+    padding: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background: #d8c8ff;
+    border: 1px solid #888;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #c9b5ff;
+}
+
+.posts {
+    width: 90%;
+    margin: auto;
+}
+
+.post {
+    border: 1px solid #bbb;
+    background: #f9f9f9;
+    padding: 8px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+
+.postheader {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.poster {
+    color: #117743;
+    font-weight: bold;
+}
+
+.postid {
+    color: #555;
+}
+
+.posttime {
+    color: #555;
+}
+
+.subject {
+    color: #6c3bcf;
+    font-weight: bold;
+}
+
+.post img {
+    max-width: 250px;
+    max-height: 250px;
+    display: block;
+    margin-top: 6px;
+    border: 1px solid #aaa;
 }
