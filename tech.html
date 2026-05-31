@@ -1,40 +1,69 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <meta charset="UTF-8">
-<title>/tech/ - unclebao.party</title>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<title>/tech/ - unclebao</title>
+
 <link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
 </head>
-<body>
+
+<body data-board="tech">
+
+<div class="topbar">
+
+<a href="index.html">home</a>
+
+<a href="qa.html">/qa/</a>
+<a href="bao.html">/bao/</a>
+<a href="mei.html">/mei/</a>
+<a href="tech.html">/tech/</a>
+
+</div>
 
 <div class="header">
-<div class="boardnav">
-[
-<a href="index.html">home</a> |
-<a href="bao.html">/bao/</a> |
-<a href="qa.html">/qa/</a> |
-<a href="mei.html">/mei/</a> |
-<a href="tech.html">/tech/</a>
-]
-</div>
 <h1>/tech/</h1>
-<p>technology board</p>
 </div>
 
-<div class="box">
-<h2>Create Post</h2>
-<input id="title" placeholder="title"><br><br>
-<textarea id="content" rows="5"></textarea><br><br>
-<input id="image" placeholder="image url (optional)"><br><br>
+<div class="postform">
+
+<div class="formrow">
+<div class="label">Subject</div>
+<div class="input">
+<input type="text" id="subject">
+</div>
+</div>
+
+<div class="formrow">
+<div class="label">Comment</div>
+<div class="input">
+<textarea id="content"></textarea>
+</div>
+</div>
+
+<div class="formrow">
+<div class="label">File</div>
+<div class="input">
+<input type="file" id="file">
+</div>
+</div>
+
+<div class="formrow">
+<div class="label">Post</div>
+<div class="input">
 <button id="postButton">Post</button>
 </div>
-
-<div class="box">
-<h2>Posts</h2>
-<div id="posts">No posts yet.</div>
 </div>
 
+</div>
+
+<div id="posts" class="posts"></div>
+
 <script src="board.js"></script>
+
 </body>
 </html>
