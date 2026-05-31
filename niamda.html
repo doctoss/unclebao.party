@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<title>Superior Bao</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<style>
+
+#warningOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#warningBox {
+    width: 500px;
+    background: #ffffff;
+    border: 2px solid #d8c8ff;
+    padding: 20px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+    position: relative;
+}
+
+#warningTitle {
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+#agreeButton {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+#adminContent {
+    display: none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="warningOverlay">
+
+    <div id="warningBox">
+
+        <div id="warningTitle">
+            Warning
+        </div>
+
+        <p>
+            You are accessing a admin accounts, be careful with what you are doing.
+        </p>
+
+        <button id="agreeButton">
+            Agree
+        </button>
+
+    </div>
+
+</div>
+
+<div id="adminContent">
+
+<div class="header">
+<h1>Superior Bao Login</h1>
+</div>
+
+<div class="postform">
+
+<div class="formrow">
+<div class="label">Email</div>
+<div class="input">
+<input type="text" id="email">
+</div>
+</div>
+
+<div class="formrow">
+<div class="label">Password</div>
+<div class="input">
+<input type="password" id="password">
+</div>
+</div>
+
+<div class="formrow">
+<div class="label">Login</div>
+<div class="input">
+<button id="loginButton">
+Login
+</button>
+</div>
+</div>
+
+</div>
+
+<div id="status" class="posts"></div>
+<div id="adminPosts" class="posts"></div>
+
+</div>
+
+<script>
+
+document.getElementById(
+    "agreeButton"
+).onclick = function () {
+
+    document.getElementById(
+        "warningOverlay"
+    ).style.display = "none";
+
+    document.getElementById(
+        "adminContent"
+    ).style.display = "block";
+};
+
+</script>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
