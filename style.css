@@ -74,7 +74,7 @@ textarea {
 
 textarea {
     resize: vertical;
-    min-height: 100px;
+    min-height:80px;
 }
 
 button {
@@ -90,8 +90,8 @@ button:hover {
 }
 
 .posts {
-    width: 90%;
-    margin: auto;
+    width: 70%;
+    max-width: 900px;
 }
 
 .post {
@@ -126,9 +126,17 @@ button:hover {
 }
 
 .post img {
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 180px;
+    max-height: 180px;
     display: block;
     margin-top: 6px;
     border: 1px solid #aaa;
+    .post {
+    font-size: 14px;
+}
+
+.postform input[type=text],
+.postform textarea {
+    font-size: 13px;
+
 }
